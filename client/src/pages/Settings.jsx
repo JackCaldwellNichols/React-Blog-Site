@@ -49,7 +49,7 @@ const Settings = () => {
     }
 }
 
-const handleDelete = async () => {
+const handleDelete = async () => { 
   try {
     await axios.delete(process.env.REACT_APP_SERVER_URL + '/users/' + user._id,{
       data: {userId: user._id }
