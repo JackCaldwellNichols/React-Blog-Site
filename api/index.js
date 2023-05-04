@@ -52,9 +52,6 @@ const startServer = async () => {
             useNewUrlParser: true
         })
         console.log('Connected')
-        app.listen(port, () => {
-            console.log('API running')
-        })
     } catch (error) {
         console.log(error)
     }
